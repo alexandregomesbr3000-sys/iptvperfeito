@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teste Gerado com Sucesso</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#050816,#0b1225,#121c36);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+color:white;
+overflow:hidden;
+}
+
+.background{
+position:absolute;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:0;
+}
+
+.circle{
+position:absolute;
+border-radius:50%;
+background:rgba(0,255,180,0.08);
+filter:blur(50px);
+}
+
+.circle:nth-child(1){
+width:300px;
+height:300px;
+top:-100px;
+left:-100px;
+}
+
+.circle:nth-child(2){
+width:400px;
+height:400px;
+bottom:-150px;
+right:-100px;
+background:rgba(0,150,255,0.08);
+}
+
+.container{
+position:relative;
+z-index:1;
+max-width:700px;
+width:100%;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:25px;
+text-align:center;
+border:1px solid rgba(255,255,255,.1);
+box-shadow:
+0 0 30px rgba(0,255,180,.15);
+}
+
+.icon{
+font-size:70px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:34px;
+margin-bottom:25px;
+color:#00ffb3;
+}
+
+.message{
+font-size:18px;
+line-height:1.8;
+color:#e5e5e5;
+margin-bottom:25px;
+}
+
+.alert{
+background:rgba(255,193,7,.12);
+border:1px solid rgba(255,193,7,.4);
+padding:18px;
+border-radius:15px;
+margin-bottom:20px;
+color:#ffd54f;
+font-weight:bold;
+}
+
+.panel-box{
+background:rgba(0,255,180,.08);
+border:1px solid rgba(0,255,180,.3);
+padding:20px;
+border-radius:15px;
+margin-top:25px;
+}
+
+.panel-box h3{
+color:#00ffb3;
+margin-bottom:10px;
+}
+
+.button{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+border-radius:50px;
+background:#00ffb3;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.button:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #00ffb3;
+}
+
+@media(max-width:768px){
+
+.container{
+padding:25px;
+}
+
+h1{
+font-size:28px;
+}
+
+.message{
+font-size:16px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="background">
+<div class="circle"></div>
+<div class="circle"></div>
+</div>
+
+<div class="container">
+
+<div class="icon">📺✅</div>
+
+<h1>Seu teste foi gerado com sucesso!</h1>
+
+<div class="message">
+IMPORTANTE: Teste enviado para seu email, confira sua Caixa de Entrada ou Spam de seu E-mail.
+</div>
+
+<div class="alert">
+⚠️ ATENÇÃO: Teste pode demorar até 15 minutos para chegar em seu e-mail!
+</div>
+
+<div class="panel-box">
+<h3>Acesse seu Painel Cliente</h3>
+
+<p>
+Utilize os dados enviados para seu e-mail para acessar seu painel e aproveitar seu período de teste.
+</p>
+</div>
+
+<a href="#" class="button">
+ACESSAR PAINEL
+</a>
+
+</div>
+
+</body>
+</html>
